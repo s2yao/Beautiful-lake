@@ -1,0 +1,281 @@
+###a beautiful lake at night       
+
+############(initial = S Y)
+
+#land1 --- the main land with tree and wooden chair
+#land2 --- the land right beside land 1, with stone and light tower
+#land3 --- the land across, with a light tower and grass field
+#land0 --- sea/ sky
+
+
+####background0
+
+#first layer
+Rect(0, 0, 400, 400, fill="midnightblue")
+#second layer
+Rect(0, 0, 400, 400, fill=gradient("steelblue", "steelblue", 'turquoise', "turquoise", "steelblue", "steelblue","steelblue", "steelblue" ,start="left"), opacity=40)
+#night sky effect
+Rect(0, 0, 400, 170, fill="darkblue", opacity=55)
+Rect(0, 0, 400, 170, fill=gradient("lightblue", "lightblue", "paleTurquoise", "lightblue", "lightblue", "paleTurquoise", "snow", 'lightSalmon', "paleTurquoise", "paleTurquoise", start="top"), opacity=30)
+
+####moon0
+
+#moonlight traveling to water surface
+Polygon(90, 0, 190, 0, 215, 170, 100, 170, fill=gradient("lightcyan", 'white', start="left"), opacity=2 )
+#first layer moonlight
+Circle(140, -20, 300, fill=gradient('white', "lightcyan" ), opacity=1)
+#second layer moonlight
+Circle(140, 0, 250, fill=gradient('white', "lightcyan" ), opacity=3)
+#moon
+Circle(140, -20, 30 , fill=gradient('white', 'white', 'lightcyan', "lightblue", "lightblue"), borderWidth=15, opacity=50)
+
+####ocean0
+Rect(0, 170, 400, 230, fill=gradient('cornflowerBlue', "midnightblue", "darkblue", "darkblue", "darkblue", "darkblue", "darkblue", "darkblue", "darkblue", "darkblue", start="top"), opacity=40)
+
+####third bank3
+#the land 3
+Line(0, 171, 232, 171)
+#the grass on land 3
+Line(0, 169, 213, 169, fill="darkgreen", opacity=30)
+#a random stone
+Line(215, 170, 215, 169)
+Line(215, 169, 213, 169)
+Line(213, 169, 213, 170)
+Line(215, 170, 213, 170)
+
+####lighttower3
+
+#light tower body 3
+Polygon(225, 171, 220, 171, 220, 161, 225, 161, fill=gradient("red", "red", "grey", "grey", "grey", "grey", "grey", "grey", "darkgreen", "black", start="top" ))
+#light head 3
+Polygon(222, 161, 223, 161, 222, 159, 223, 159, fill="orange")
+
+####lighttower shadow2
+Polygon(340, 182, 343, 184, 347, 185, 351, 186, 356, 184, 362, 182, 367, 213, 363, 247, 343, 238, 348, 208, 340, 182)
+
+####light from tower3
+#the light reaching out until light tower 2 covered
+Polygon(223, 160, 340, 146, 340, 170, 295, 170, fill=gradient("orangered", "lightsalmon", start="left"), opacity=8)
+#the light after light tower 2(less opacity)
+Polygon(360, 142, 400, 135, 400, 170, 360, 170, fill="lightsalmon", opacity=2.5)
+
+####Stone part of the land2
+#first layer
+Polygon(300, 172, 287, 181, 281, 189, 280, 202, 283, 220, 292, 222, 302, 227, 313, 228, 327, 235, 335, 242, 350, 242, 357, 254, 369, 254, 383, 267, 400, 280, 400, 220, 373, 214, 355, 210, 343, 208, 330, 208, 321, 203, 314, 194, 312, 182, 322, 170, fill=gradient("darkgrey", "grey", "dimgrey", "black", start="left-top"), opacity=50)
+#night effect second layer
+Polygon(300, 172, 287, 181, 281, 189, 280, 202, 283, 220, 292, 222, 302, 227, 313, 228, 327, 235, 335, 242, 350, 242, 357, 254, 369, 254, 383, 267, 400, 280, 400, 220, 373, 214, 355, 210, 343, 208, 330, 208, 321, 203, 314, 194, 312, 182, 322, 170, fill="black", opacity=50)
+
+####stones2
+Polygon(310, 172, 308, 174, 315, 175, 315, 172)
+Polygon(300, 172, 307, 172, 304, 176, 300, 175)
+Polygon(307, 176, 312, 176, 310, 183, 303, 178)
+Polygon(297, 176, 301, 177, 292, 178, 302, 179)
+Polygon(302, 181, 309, 186, 300, 187, 293, 179)
+Polygon(291, 181, 297, 187, 287, 186)
+Polygon(309, 190, 296, 190, 311, 194, 300, 195)
+Polygon(285, 188, 292, 190, 285, 197)
+Polygon(295, 189, 301, 195, 294, 202, 285, 200)
+Polygon(311, 198, 303, 197, 307, 202, 316, 201)
+Polygon(284, 202, 286, 212, 295, 209, 290, 205)
+Polygon(301, 199, 295, 203, 299, 208, 304, 205)
+Polygon(287, 215, 300, 222, 300, 216 ,297, 212)
+Polygon(302, 210, 305, 222, 311, 214, 307, 207)
+Polygon(309, 203, 317, 203, 326, 209, 315, 212)
+Polygon(308, 224, 313, 215, 327, 218, 317, 223)
+Polygon(315, 213, 336, 209, 336, 216)
+Polygon(316, 227, 332, 218, 341, 222, 333, 237)
+Polygon(339, 210, 353, 211, 353, 222, 338, 216)
+Polygon(338, 236, 340, 230, 357, 229, 355, 237)
+Polygon(344, 221, 343, 229, 355, 226, 358, 222)
+Polygon(356, 212, 358, 218, 374, 221, 369, 215)
+Polygon(353, 239, 357, 248, 375, 246, 360, 234)
+Polygon(363, 219, 359, 229, 375, 230, 377, 225)
+Polygon(363, 233, 363, 230, 396, 233, 382, 245)
+Polygon(377, 215, 379, 228, 397, 229, 400, 223)
+Polygon(372, 250, 379, 244, 400, 254, 400, 260, 385, 262)
+Polygon(387, 263, 400, 264, 400, 275)
+Polygon(387, 242, 400, 237, 400, 250)
+
+####water on stone2
+#first layer
+Polygon(297, 170, 289, 186, 293, 203, 306, 214, 352, 226, 381, 238, 400, 245, 400, 280, 383, 267, 369, 254, 357, 254, 350, 242, 335, 242, 327, 235, 313, 228, 302, 227, 292, 222, 283, 220, 280, 202, 281, 189, 287, 181, 300, 172, fill=gradient("lightcyan", "darkblue", start="right-top"), opacity=70) 
+#night effect second layer
+Polygon(297, 170, 289, 186, 293, 203, 306, 214, 352, 226, 381, 238, 400, 245, 400, 280, 383, 267, 369, 254, 357, 254, 350, 242, 335, 242, 327, 235, 313, 228, 302, 227, 292, 222, 283, 220, 280, 202, 281, 189, 287, 181, 300, 172, fill="black", opacity=20) 
+
+
+####reflection of lake 0
+
+#random swell of reflection0
+Oval(158, 180, 140, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=40)
+Oval(162, 188, 147, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=40)
+Oval(164, 196, 153, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=40)
+Oval(167, 204, 162, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=40)
+Oval(170, 209, 169, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=40)
+Oval(173, 215, 175, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=40)
+Oval(176, 222, 183, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=40)
+Oval(179, 229, 192, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=40)
+Oval(182, 236, 195, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=40)
+Oval(185, 243, 198, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=40)
+Oval(188, 250, 196, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=40)
+Oval(191, 257, 194, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=55)
+
+#first split0
+Oval(200, 271, 193, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=55)
+Oval(203, 278, 192, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=38)
+Oval(206, 285, 190, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=36)
+Oval(209, 292, 182, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=34)
+
+#opacity cease
+Oval(212, 299, 186, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=32)
+Oval(215, 306, 190, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=30)
+Oval(218, 313, 194, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=28)
+Oval(221, 320, 198, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=26)
+Oval(224, 327, 202, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=24)
+Oval(235, 340, 206, 20, fill=gradient('steelblue', 'lightcyan', 'steelblue', start="left"), opacity=22)
+Oval(250, 358, 210, 20, fill=gradient('mediumBlue', 'lightcyan', 'mediumBlue', start="left"), opacity=20)
+
+#ending of ripple0
+Oval(270, 370, 210, 20, fill=gradient('mediumBlue', 'lightcyan', 'lightcyan', start="left"), opacity=10)
+
+
+#the outter parts of the reflection on lake0
+Oval(158, 180, 200, 20, fill="lightcyan", opacity=10)
+Oval(162, 188, 208, 20, fill="lightcyan", opacity=10)
+Oval(164, 196, 219, 20, fill="lightcyan", opacity=10)
+Oval(167, 204, 225, 20, fill="lightcyan", opacity=10)
+Oval(170, 209, 236, 20, fill="lightcyan", opacity=10)
+Oval(173, 215, 242, 20, fill="lightcyan", opacity=10)
+Oval(176, 222, 245, 20, fill="lightcyan", opacity=10)
+Oval(179, 229, 252, 20, fill="lightcyan", opacity=10)
+Oval(182, 236, 253, 20, fill="lightcyan", opacity=10)
+Oval(185, 243, 261, 20, fill="lightcyan", opacity=10)
+Oval(188, 250, 270, 20, fill="lightcyan", opacity=10)
+Oval(191, 257, 278, 20, fill="lightcyan", opacity=9)
+Oval(200, 271, 283, 20, fill="lightcyan", opacity=9)
+Oval(203, 278, 290, 20, fill="lightcyan", opacity=8)
+Oval(206, 285, 296, 20, fill="lightcyan", opacity=8)
+Oval(209, 292, 301, 20, fill="lightcyan", opacity=7)
+Oval(212, 299, 307, 20, fill="lightcyan", opacity=7)
+Oval(215, 306, 320, 20, fill="lightcyan", opacity=7)
+Oval(218, 313, 332, 20, fill="lightcyan", opacity=6)
+Oval(221, 320, 345, 20, fill="lightcyan", opacity=6)
+Oval(224, 327, 367, 20, fill="lightcyan", opacity=5)
+Oval(235, 340, 382, 20, fill="lightcyan", opacity=4)
+Oval(250, 358, 390, 20, fill="lightcyan", opacity=2)
+Oval(270, 370, 400, 20, fill="lightcyan", opacity=1)
+
+####land 1
+#first layer
+Polygon(0, 385, 11, 388, 23, 382, 37, 377, 55, 370, 57, 367, 84, 361, 100, 358, 107, 352, 115, 350, 121, 350, 134, 347, 144, 346, 155, 342, 167, 339, 183, 342, 194, 341, 208, 338, 217, 338, 226, 334, 230, 334, 245, 336, 259, 340, 272, 341, 289, 347, 302, 349, 318, 350, 325, 352, 335, 361, 348, 361, 359, 368, 371, 374, 377, 381, 386, 379, 400, 400, 0, 400, opacity=50, fill="darkgreen")
+#night effect second layer
+Polygon(0, 385, 11, 388, 23, 382, 37, 377, 55, 370, 57, 367, 84, 361, 100, 358, 107, 352, 115, 350, 121, 350, 134, 347, 144, 346, 155, 342, 167, 339, 183, 342, 194, 341, 208, 338, 217, 338, 226, 334, 230, 334, 245, 336, 259, 340, 272, 341, 289, 347, 302, 349, 318, 350, 325, 352, 335, 361, 348, 361, 359, 368, 371, 374, 377, 381, 386, 379, 400, 400, 0, 400, opacity=60, fill="black")
+
+####tree1
+#trunk
+Polygon(37, 385, 46, 365, 51, 342, 51, 316, 56, 302, 53, 286, 47, 267, 45, 252, 68, 267, 76, 270, 91, 261, 97, 257, 99, 282, 100, 296, 98, 318, 95, 338, 99, 358, 113, 374, opacity=70)
+#leaves(first layer)
+Circle(28, 229, 30, fill="darkgreen", opacity=70)
+Circle(66, 219, 45, fill="darkgreen", opacity=70)
+Circle(95, 242, 40, fill="darkgreen", opacity=70)
+Circle(31, 251, 30, fill="darkgreen", opacity=70)
+#leaves (second layer night effect)
+Circle(28, 229, 30, fill="black", opacity=40)
+Circle(66, 219, 45, fill="black", opacity=40)
+Circle(95, 242, 40, fill="black", opacity=40)
+Circle(31, 251, 30, fill="black", opacity=40)
+
+####wooden chair 1
+#back view of chair
+Rect(170, 350, 70, 4)
+Rect(170, 345, 70, 4)
+Polygon(170, 340, 240, 340, 238, 345, 240, 344, 170, 344)
+Polygon(171, 335, 240, 335, 238, 337, 240, 339, 170, 339)
+
+#front view of chair
+Line(175, 335, 175, 354)
+Line(235, 335, 235, 354)
+Line(180, 355, 180, 365, lineWidth=5)
+Line(230, 355, 230, 365, lineWidth=5)
+
+####land2
+#first layer, with some tower light over the edge of this layer
+Polygon(400, 220, 373, 214, 355, 210, 343, 208, 330, 208, 321, 203, 314, 194, 312, 182, 322, 170, 400, 170, opacity=30, fill=gradient("mediumaquamarine","darkgreen","darkgreen", "darkgreen", "darkgreen", "darkgreen", "darkgreen", "darkgreen", "darkgreen", "darkgreen", "darkgreen", "darkgreen", "darkgreen", "darkgreen", "mediumaquamarine", 'lightSalmon', 'lightSalmon', 'lightSalmon', 'lightSalmon', 'lightSalmon', 'lightSalmon'))
+#night effect second layer
+Polygon(400, 220, 373, 214, 355, 210, 343, 208, 330, 208, 321, 203, 314, 194, 312, 182, 322, 170, 400, 170, opacity=50, fill="black")
+#light effect from light tower2 third layer
+Polygon(400, 220, 373, 214, 355, 210, 343, 208, 330, 208, 321, 203, 314, 194, 312, 182, 322, 170, 400, 170, opacity=18, fill=gradient("coral", "lightsalmon"))
+
+####lighttower2
+#first layer
+Polygon(340, 182, 343, 184, 347, 185, 351, 186, 356, 184, 362, 182, 360, 109, 340, 109, fill=gradient("red", "red", "grey", "grey", "grey", "grey", "grey", "grey", "darkgreen", "black", start="top" ))
+#second layer night effect
+Polygon(340, 182, 343, 184, 347, 185, 351, 186, 356, 184, 362, 182, 360, 109, 340, 109, fill="black", opacity=42)
+
+####fence of light tower
+Line(335, 109, 365, 109)
+Line(335, 109, 335, 95)
+Line(335, 95, 365, 95, lineWidth=0.5)
+Line(365, 95, 365, 109)
+
+#left across to right of the fence on the light head
+Line(335, 109, 365, 95, lineWidth=0.2)
+Line(340, 109, 365, 97.5, lineWidth=0.2)
+Line(345, 109, 365, 100, lineWidth=0.2)
+Line(350, 109, 365, 102.5, lineWidth=0.2)
+Line(355, 109, 365, 105, lineWidth=0.2)
+Line(335, 107, 360, 95, lineWidth=0.2)
+Line(335, 105, 355, 95, lineWidth=0.2)
+Line(335, 103, 350, 95, lineWidth=0.2)
+Line(335, 101, 345, 95, lineWidth=0.2)
+Line(335, 99, 340, 95, lineWidth=0.2)
+
+#right across to left of the fence on the light head
+Line(340, 109, 335, 107, lineWidth=0.2)
+Line(345, 109, 335, 105, lineWidth=0.2)
+Line(350, 109, 335, 103, lineWidth=0.2)
+Line(355, 109, 335, 101, lineWidth=0.2)
+Line(360, 109, 335, 99, lineWidth=0.2)
+Line(365, 109, 335, 97, lineWidth=0.2)
+Line(365, 107, 335, 95, lineWidth=0.2)
+Line(365, 105, 340, 95, lineWidth=0.2)
+Line(365, 103, 345, 95, lineWidth=0.2)
+Line(365, 101, 350, 95, lineWidth=0.2)
+Line(365, 99, 355, 95, lineWidth=0.2)
+Line(365, 97, 360, 95, lineWidth=0.2)
+
+#lighthead2
+Rect(345, 85, 10, 23, fill="orangered", opacity=70)
+Rect(345, 90, 10, 11.50, fill="orange")
+
+#light from light tower
+Polygon(355, 102, 355, 90, 400, 80 , 400, 145, fill=gradient("orange", "lightsalmon", start="left"), opacity=40)
+
+
+####shadow of tree1
+#shadow of tree trunk
+Polygon(113, 374, 100, 390, 100, 400, 31, 400, 37, 385, opacity=40)
+#shadow of leaves
+Oval(125, 400, 100, 20, opacity=20)
+
+####chair shadow1
+#chair leg
+Line(180, 365, 180, 374, lineWidth=5, opacity=45)
+Line(230, 365, 230, 374, lineWidth=5, opacity=45)
+#chair body
+Rect(170, 377, 70, 4, opacity=45)
+Rect(170, 372, 70, 4, opacity=40)
+Polygon(170, 387, 240, 387, 238, 392, 240, 391, 170, 393, opacity=35)
+Polygon(171, 382, 240, 382, 238, 384, 240, 386, 170, 386, opacity=25)
+
+
+####stars
+Star(371, 14, 4, 4, fill="yellow")
+Star(307, 34, 4, 4, fill="yellow")
+Star(45, 19, 3, 4, fill="yellow")
+Star(234, 16, 4, 4, fill="yellow")
+Star(200, 7, 2, 4, fill="yellow")
+Star(329, 13, 4, 4, fill="yellow")
+Star(7, 54, 4, 4, fill="yellow")
+Star(103, 14, 3, 4, fill="yellow")
+Star(235, 59, 3, 4, fill="yellow")
+Star(71, 25, 4, 4, fill="yellow")
